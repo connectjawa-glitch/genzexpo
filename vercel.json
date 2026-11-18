@@ -1,0 +1,31 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "buildCommand": "",
+  "installCommand": "",
+  "outputDirectory": "dist",
+  "headers": [
+    {
+      "source": "/api/bookings",
+      "headers": [{ "key": "Cache-Control", "value": "no-store, max-age=0" }]
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/api/bookings",
+      "destination": "https://erode-genz-agri-expo-2027.surprisingiris2.chatgpt.site/api/bookings"
+    },
+    {
+      "source": "/records/expo-website-and-recreated-assets.zip",
+      "destination": "https://erode-genz-agri-expo-2027.surprisingiris2.chatgpt.site/records/expo-website-and-recreated-assets.zip"
+    },
+    {
+      "source": "/records/erode-genz-admin.zip",
+      "destination": "https://erode-genz-agri-expo-2027.surprisingiris2.chatgpt.site/records/erode-genz-admin.zip"
+    },
+    {
+      "source": "/records/erode-genz-website.zip",
+      "destination": "https://erode-genz-agri-expo-2027.surprisingiris2.chatgpt.site/records/erode-genz-website.zip"
+    }
+  ]
+}
