@@ -29,3 +29,37 @@
  .detail-booking-line{margin-top:0}
 }
 @media(max-width:520px){.booking-status-line{padding-inline:11px}.booking-status-time{font-size:8px}.booking-badge,.booking-legend{font-size:9px}.selection-pin .pin-booked{font-size:8px}}
+
+/* Stock state is a separate badge/border; brochure category fills stay intact. */
+.booking-legend-reserved,.detail-booking-line[data-status=reserved] .booking-badge{background:#fff7df;color:#885d16;border-color:#ddc58d}
+.booking-legend-reserved:before{content:'R'}
+.booking-legend-sold-out:before{content:'S'}
+.detail-booking-line[data-status=available] .booking-badge{background:#edf6e7;color:#28633c;border-color:#bbd5ab}
+.detail-booking-line[data-status=sold_out] .booking-badge{background:#fff1f2;color:#87384b;border-color:#e8bbc4}
+.detail-booking-line[data-status=reserved] small{color:#8d681f}
+.selection-pin .pin-booked.is-reserved{color:#ffe6a7}
+.stall-directory button.is-reserved{border-color:#c49a42}
+.stall-directory button.is-sold-out{border-color:#bd788a;cursor:not-allowed}
+.stall-directory button .directory-booked[data-status=reserved]{background:#a17424;color:#fff8e4}
+.stall-directory button .directory-booked[data-status=available]{background:#2f7449;color:#fff}
+.detail-quick button.is-reserved{box-shadow:inset 0 0 0 1px #c49a42}
+.detail-quick button.is-sold-out{box-shadow:inset 0 0 0 1px #bd788a;cursor:not-allowed}
+.scene-wrap #flat-map .map-stall.is-reserved .stall-tile{stroke:#bd8422;stroke-width:.45;stroke-dasharray:1 .6}
+.scene-wrap #flat-map .map-stall.is-sold-out .stall-tile{stroke:#a83c58;stroke-width:.45;stroke-dasharray:1 .6}
+.hover-stall-status[data-status=reserved]{color:#946618}
+.hover-stall-status[data-status=sold_out]{color:#963d55}
+.scene-wrap[data-booking-checking=true]:after{content:attr(data-booking-check-label);position:absolute;left:50%;top:68px;transform:translateX(-50%);z-index:12;max-width:calc(100% - 110px);padding:9px 13px;background:#fffdf5f5;border:1px solid #d8dfc8;border-radius:8px;color:#6a772e;font-size:11px;line-height:1.6;box-shadow:0 4px 16px #173e2b18;pointer-events:none}
+.enquiry-status-check{font-size:12px;line-height:1.8;color:#8c6722;background:#fff8e8;border-radius:7px;padding:10px 12px;margin-top:12px}
+.enquiry-status-check:empty{display:none}
+.enquiry-status-check[data-status=sold_out]{color:#8e3d50;background:#fff0f3}
+.stall-status-dialog{position:fixed;inset:0;margin:auto;width:min(460px,calc(100% - 32px));max-height:calc(100dvh - 32px);overflow:auto;border:1px solid #d9e3d0;border-radius:17px;padding:34px 30px 28px;color:#1c4b30;background:linear-gradient(145deg,#fff,#f5f8ed);box-shadow:0 25px 100px #133b2b38;text-align:left}
+.stall-status-dialog::backdrop{background:#12332466;backdrop-filter:blur(5px)}
+.status-notice-close{position:absolute;top:14px;right:14px;width:31px;height:31px;border:1px solid #d9e3d0;border-radius:50%;background:#f4f7ed;color:#718467;font-size:22px;line-height:1;cursor:pointer}
+.status-notice-symbol{display:grid;place-items:center;width:48px;height:48px;background:#fff0cb;color:#956315;border:1px solid #dfc28b;border-radius:13px;font:700 26px/1 Arial,sans-serif}
+.stall-status-dialog[data-status=sold_out] .status-notice-symbol{background:#fbeaf0;color:#9b3e56;border-color:#e5b8c4}
+.stall-status-dialog[data-status=unknown] .status-notice-symbol{background:#eff3e7;color:#6c804e;border-color:#d3dec5}
+.status-notice-stall{font-size:10px;letter-spacing:.08em;margin:18px 0 8px;color:#869575;line-height:1.7}
+.stall-status-dialog h2{font-size:30px;line-height:1.3;letter-spacing:-.035em;margin:0;font-weight:600}
+#stall-status-message{font-size:14px;line-height:1.85;margin:15px 0 24px;color:#657755;overflow-wrap:anywhere}
+.status-notice-action{width:100%;justify-content:center;min-height:45px}
+@media(max-width:520px){.stall-status-dialog{padding:29px 22px 23px}.stall-status-dialog h2{font-size:25px}#stall-status-message{font-size:13px}.scene-wrap[data-booking-checking=true]:after{font-size:10px;top:58px}}

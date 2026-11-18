@@ -7,3 +7,5 @@ For a static preview, serve the dist folder with an HTTP static server rather th
 To restore the full deployable project, extract this ZIP and the admin ZIP into the same parent directory, merging the common erode-genz-expo folder. Shared data/logo files are intentionally identical in both ZIPs. See README-ADMIN.md and README.md for build and Worker/D1 setup.
 
 Source notes identify reconstructed logos/artwork and unresolved brochure details. Passwords and live database contents are excluded from both downloads.
+
+Live status tags distinguish Reserved from Sold out. Sold-out stalls show a popup and cannot be selected for enquiry. Reserved stalls show a warning, remain eligible for enquiry, and include their reserved status in the WhatsApp draft. Stall-specific handoffs require a fresh status check; an unavailable booking service asks the visitor to retry instead of opening an outdated enquiry.

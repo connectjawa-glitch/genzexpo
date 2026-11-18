@@ -1,8 +1,17 @@
 {
   "source": "Re-supplied Hall 1 and Hall 2 reference plans",
-  "scope": "Schematic illustration of printed circulation arrows; not a surveyed or certified egress plan",
-  "lanes": 19,
+  "scope": "Schematic illustration of printed circulation arrows and marked masonry dividers; not a surveyed or certified egress plan",
+  "lanes": 20,
+  "barriers": 3,
   "blockedIntersections": [],
+  "bodyClearance": 0.4,
+  "notes": [
+    "Hall 1 top cross-aisle is split on either side of the divider between stalls31 and89, descending to the46/88 island.",
+    "Hall 1 lower eastward link runs below the stair-divider at z82, outside the toilet and staircase blocks.",
+    "Hall 2 LED/stall173 divider ends at z58.5; the separate vertical aisle at x28 remains open.",
+    "Each tour chapter shows a directed lane separately; camera transitions between chapters are not continuous walking routes.",
+    "Visible arrows fade before lane endpoints; walkers use the same directed geometry and fade at endpoints."
+  ],
   "plans": {
     "1": {
       "outline": [
@@ -60,6 +69,20 @@
           "points": [
             [
               17,
+              15
+            ],
+            [
+              54.2,
+              15
+            ]
+          ]
+        },
+        {
+          "id": "h1-top-right-east",
+          "label": "topAisle",
+          "points": [
+            [
+              56.8,
               15
             ],
             [
@@ -143,12 +166,12 @@
           "label": "crossAisle",
           "points": [
             [
-              20,
-              81
+              20.5,
+              82
             ],
             [
-              40.5,
-              81
+              42,
+              82
             ]
           ]
         },
@@ -157,14 +180,34 @@
           "label": "crossAisle",
           "points": [
             [
-              40.5,
-              81
+              42,
+              82
             ],
             [
-              40.5,
+              42,
               76.5
             ]
           ]
+        }
+      ],
+      "barriers": [
+        {
+          "id": "h1-upper-divider",
+          "key": "barrier",
+          "x": 55.2,
+          "z": 0,
+          "w": 0.6,
+          "d": 17,
+          "height": 2.8
+        },
+        {
+          "id": "h1-stair-divider",
+          "key": "barrier",
+          "x": 39.7,
+          "z": 74.4,
+          "w": 0.6,
+          "d": 6.6,
+          "height": 2.8
         }
       ],
       "walls": [
@@ -272,6 +315,7 @@
       "tour": [
         "h1-left-up",
         "h1-top-right",
+        "h1-top-right-east",
         "h1-centre-down",
         "h1-bottom-right",
         "h1-right-up",
@@ -437,6 +481,17 @@
               0
             ]
           ]
+        }
+      ],
+      "barriers": [
+        {
+          "id": "h2-led-divider",
+          "key": "barrier",
+          "x": 26.2,
+          "z": 14,
+          "w": 0.6,
+          "d": 44.5,
+          "height": 2.8
         }
       ],
       "walls": [

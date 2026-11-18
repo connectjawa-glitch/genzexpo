@@ -4,6 +4,8 @@ Public website for **Erode Genz Agri Expo 2027**: six languages, animated 3D and
 
 The frontend lives in `dist/`. The admin portal and booking backend are maintained separately in [connectjawa-glitch/genzexpoadmin](https://github.com/connectjawa-glitch/genzexpoadmin).
 
+Hall maps include the reference pathway dividers and matching directed visitor routes. Live tags distinguish **Reserved** and **Sold out**. Sold-out stalls display a notice and cannot be selected for enquiry; reserved stalls display a warning that is included in the WhatsApp draft. Stall selection and stall-specific WhatsApp handoffs check the latest status. A static preview without the booking API can show the map but cannot confirm stall availability.
+
 ## Preview the website
 
 From this repository run:
