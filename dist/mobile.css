@@ -1,0 +1,42 @@
+@media(max-width:600px){
+ .header{padding:12px 16px;gap:8px}
+ .header .brand{min-width:0;flex:0 1 auto}
+ .header .brand img{width:clamp(104px,34vw,145px);max-width:100%;height:auto}
+ .header-actions{gap:4px;min-width:0}
+ .language-control{min-width:0;gap:4px}
+ .language-control>span[aria-hidden=true]{display:none}
+ .language-control select{font-size:16px;min-height:44px;min-width:0;max-width:clamp(90px,31vw,125px);padding-inline:4px}
+ #menu-toggle{width:44px;height:44px;min-width:44px;flex-shrink:0}
+ .header nav.open a{min-height:44px;display:flex;align-items:center;font-size:14px}
+ .hall-topbar{align-items:stretch}
+ .hall-topbar button{min-height:44px}
+ html .hall-topbar .hall-tabs button{font-size:13px;min-width:0}
+ .map-top-actions{width:100%;gap:8px;flex-wrap:wrap}
+ .map-top-actions .view-tabs{flex:1;min-width:0;display:flex}
+ html .map-top-actions .view-tabs button{flex:1;min-width:0;font-size:12px;white-space:normal;line-height:1.5}
+ html .hall-topbar .directions-toggle{font-size:12px;line-height:1.5}
+ .explorer-search{display:grid;grid-template-columns:minmax(0,1fr);gap:10px;padding:12px}
+ .explorer-search .search-wrap{min-width:0;min-height:48px;padding-right:0}
+ .explorer-search .search-wrap input{min-width:0;font-size:16px}
+ .explorer-search select#category{width:100%;min-width:0;min-height:48px;font-size:16px}
+ .search-go{width:44px;height:44px;margin-right:0}
+ .scene-tools{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));left:12px;right:12px;bottom:40px;max-width:none;width:auto;gap:4px;padding:4px}
+ html .scene-wrap .scene-tools .map-tool{min-width:0;min-height:60px;padding:6px;display:flex;flex-direction:column;justify-content:center;gap:4px;font-size:11px;line-height:1.4;text-align:center;white-space:normal;overflow-wrap:anywhere}
+ .scene-corner{display:grid;grid-template-columns:repeat(2,44px);gap:8px;top:72px;right:10px}
+ .scene-corner .icon-button{width:44px;height:44px}
+ .scene-hint{font-size:10px;bottom:9px;line-height:1.4;padding-inline:12px}
+ .scene-wrap #flat-map{padding-bottom:108px}
+ .detail-top .icon-button,.detail-nav button{width:44px;height:44px;min-width:44px;min-height:44px}
+ .detail-focus,.stall-detail .enquire-stall{min-height:48px;font-size:14px}
+ html .hall-workspace .map-legend{font-size:11px;line-height:1.6}
+ #enquiry-dialog{scroll-padding-block:24px 180px;padding-bottom:max(24px,env(safe-area-inset-bottom))}
+ #enquiry-dialog input,#enquiry-dialog textarea,#enquiry-dialog #enquiry-draft{font-size:16px}
+ #enquiry-dialog #enquiry-draft{min-height:230px;line-height:1.65}
+ #enquiry-dialog h2{padding-right:40px}
+ #enquiry-dialog .dialog-close{width:44px;height:44px;min-height:44px;top:-8px}
+ .enquiry-fields input,.enquiry-fields textarea{scroll-margin-block:24px 180px}
+ .enquiry-send{flex-direction:column;align-items:stretch;gap:10px;padding-bottom:max(13px,env(safe-area-inset-bottom))}
+ .enquiry-recipient{min-width:0;flex-direction:row;flex-wrap:wrap;justify-content:space-between;gap:4px 12px;font-size:12px}
+ .enquiry-recipient strong{font-size:13px}
+ .whatsapp-send{width:100%;min-height:48px;font-size:14px}
+}

@@ -1,0 +1,25 @@
+# genzexpo
+
+Public website for **Erode Genz Agri Expo 2027**: six languages, animated 3D and flat hall maps, 193 stall details, event programme, mobile layouts and WhatsApp enquiries.
+
+The frontend lives in `dist/`. The admin portal and booking backend are maintained separately in [connectjawa-glitch/genzexpoadmin](https://github.com/connectjawa-glitch/genzexpoadmin).
+
+## Preview the website
+
+From this repository run:
+
+```sh
+python -m http.server 8000 --directory dist
+```
+
+Open <http://localhost:8000>. Use an HTTP server; opening index.html directly may block JavaScript modules. No frontend dependency installation is required for this static preview.
+
+## Booking updates and the full build
+
+The public map reads `/api/bookings` on the same origin. A static-only preview works, but shows an unavailable booking-update indicator until the backend is connected. The component ZIP-download routes also require the combined Worker backend.
+
+These repositories are components of one application, not separate deployable booking systems. Follow the admin repository's combined-build instructions to merge the public `dist/` files and `README-WEBSITE.md` into its working copy, then build and publish the complete app.
+
+Shared stall data, event logo, favicon and release metadata are deliberately identical in both repositories. Preserve the admin-specific files when merging.
+
+See `PROJECT-NOTES.md`, `README-WEBSITE.md` and `dist/records/` for source annotations, artwork attribution, verification history and unresolved brochure details. Reconstructed logos and artwork remain explicitly identified. Credentials, sessions and live booking data are not included.

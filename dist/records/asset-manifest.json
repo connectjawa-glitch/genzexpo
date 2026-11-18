@@ -1,0 +1,62 @@
+{
+  "source": "15 user-provided inline reference images, visually analysed in order",
+  "original_posters_backed_up": false,
+  "original_logo_files_backed_up": false,
+  "reason": "Inline images were visible in chat, but no downloadable original files or source image binaries were present in the execution workspace.",
+  "assets": [
+    {
+      "file": "assets/agri-future.png",
+      "status": "newly_generated_concept_art",
+      "description": "Agricultural landscape with greenhouse, tractor, drone and robot. Not real venue photography.",
+      "sha256": "4cb8b73f04e0e32dcda0be78d50d440209569cafe2e34cafaf79be1d0c741263",
+      "bytes": 2824666
+    },
+    {
+      "file": "assets/event-recreated.png",
+      "status": "reference_derived_reconstruction",
+      "description": "Erode Genz Agri Expo 2027 logo; not an exact original.",
+      "sha256": "6a8bc245c17adfb9f6f3b3660194c8c04667e2669dedb6f85fa357312bd38804",
+      "bytes": 523541
+    },
+    {
+      "file": "assets/partners-recreated.png",
+      "status": "reference_derived_reconstruction",
+      "description": "GEN Z Agri Foundation and Brain Factory Event Management logo strip. Small emblem details/year may differ from source; not approved original artwork.",
+      "sha256": "e6793a1d81122dd775e5a211c2d318298cedaafb3f8840757791ad8594b5f8b8",
+      "bytes": 616483
+    },
+    {
+      "file": "assets/venue-recreated.png",
+      "status": "reference_derived_reconstruction",
+      "description": "Texvalley / Price-less Marketplace wordmark; not an exact original.",
+      "sha256": "923971c38842ad0d99a9ef89f89789b5dc2d3b3be296535e1380c8cdb74004d6",
+      "bytes": 213475
+    }
+  ],
+  "missing_originals": [
+    "15 reference image files",
+    "approved event logo",
+    "approved GEN Z Agri Foundation logo",
+    "approved Brain Factory Event Management logo",
+    "approved Texvalley logo",
+    "actual aerial venue photographs",
+    "decodable QR image or verified destination"
+  ],
+  "backup_policy": "Reconstructed assets are kept separately from future originals; never overwrite approved originals with reconstructions.",
+  "third_party": {
+    "threejs": "Three.js 0.170.0, locally vendored under MIT; license in assets/vendor/THREE-LICENSE.txt",
+    "fonts": "Google Fonts: DM Sans, Manrope, Noto Sans Tamil, Devanagari, Malayalam, Kannada and Telugu"
+  },
+  "review_images": [
+    {
+      "file": "records/hall1-3d-preview.jpg",
+      "status": "hosted_browser_screenshot",
+      "sha256": "63308339d49ba7904b6252f13a2c04951a1f01ecff4f78c01b9a0c0e220c6e1e"
+    },
+    {
+      "file": "records/hall2-preview.jpg",
+      "status": "hosted_browser_screenshot",
+      "sha256": "bc559abdccf97d35ed1ecbdda5b921b285266e51e39ca301019fce7261c98f0b"
+    }
+  ]
+}

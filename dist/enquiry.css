@@ -1,0 +1,40 @@
+#enquiry-dialog{width:min(680px,calc(100% - 28px));max-width:680px;max-height:90dvh;overflow-y:auto;overscroll-behavior:contain;padding:32px;border-radius:18px}
+#enquiry-dialog h2{font-size:30px;line-height:1.25;margin-bottom:16px}
+#enquiry-dialog .eyebrow{margin-bottom:10px}
+#enquiry-dialog .dialog-icon{color:#1b7b45}
+#enquiry-intro{font-size:12px;line-height:1.8;color:#65765d}
+.enquiry-selection{padding:13px 16px;border:1px solid #d5e3cc;border-left:3px solid #78a64d;border-radius:8px;background:#edf4e5;font-size:12px;line-height:1.8;white-space:pre-line;margin-bottom:14px}
+.enquiry-fields{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:22px}
+.enquiry-fields label{display:flex;flex-direction:column;gap:6px;min-width:0;font-size:11px;font-weight:600}
+.enquiry-fields label b{color:#557937}
+.enquiry-fields .enquiry-wide{grid-column:1/-1}
+#enquiry-dialog input,#enquiry-dialog textarea{width:100%;min-width:0;border:1px solid #d3dfc9;background:#fff;color:#173f2b;border-radius:8px;padding:11px 12px;font:inherit;font-size:13px;line-height:1.65}
+#enquiry-dialog textarea{resize:vertical;min-height:80px}
+#enquiry-dialog input:focus,#enquiry-dialog textarea:focus{border-color:#7b9f5e;outline:2px solid #b9d99b;outline-offset:1px}
+.enquiry-draft-label{display:block;margin:22px 0 8px;font-size:11px;font-weight:700}
+#enquiry-dialog #enquiry-draft{font-size:11px;line-height:1.8;min-height:165px;background:#f1f6eb;color:#375333;white-space:pre-wrap}
+.enquiry-send{position:sticky;bottom:0;z-index:2;background:#f9fbf4;border-top:1px solid #dae5d2;display:flex;align-items:center;justify-content:space-between;gap:14px;margin-top:20px;padding:16px 0;box-shadow:0 -10px 15px #f9fbf4}
+.enquiry-recipient{display:flex;flex-direction:column;gap:2px;line-height:1.7;font-size:10px;color:#6c7c61}
+.enquiry-recipient strong{font-size:12px;color:#204b30;white-space:nowrap}
+.whatsapp-send{gap:10px;min-height:46px;font-size:12px;padding:12px 16px;background:#116b3d}
+.whatsapp-send svg{width:18px;height:18px;flex-shrink:0}
+.enquiry-hint{font-size:10px;line-height:1.8;color:#6e7d64;margin-top:3px}
+#enquiry-dialog .dialog-phones{flex-direction:row;flex-wrap:wrap;gap:14px 25px;border-top:1px solid #dfe7d7;padding-top:17px;margin-top:21px}
+#enquiry-dialog .dialog-phones .text-link{font-size:11px;gap:7px}
+#enquiry-dialog .dialog-phones svg{width:16px;height:16px}
+.enquiry-fine{font-size:10px;line-height:1.8;color:#7d8a74;margin-top:17px}
+.whatsapp-contact{position:relative;z-index:2;margin-top:25px;background:#126b40;gap:14px}
+.whatsapp-contact svg{width:20px;height:20px}
+@media(max-width:520px){
+ #enquiry-dialog{padding:25px 20px;max-height:92dvh;border-radius:13px}
+ #enquiry-dialog h2{font-size:25px;padding-right:15px}
+ .enquiry-fields{grid-template-columns:1fr;gap:13px}
+ #enquiry-dialog input,#enquiry-dialog textarea{font-size:16px}
+ #enquiry-dialog #enquiry-draft{font-size:12px;min-height:190px}
+ .enquiry-send{bottom:0;align-items:stretch;flex-direction:column;gap:10px;padding-block:13px}
+ .enquiry-recipient{flex-direction:row;justify-content:space-between;gap:8px}
+ .whatsapp-send{width:100%;font-size:12px}
+ .whatsapp-contact{max-width:100%;font-size:12px}
+}
+
+#enquiry-dialog .dialog-close{position:sticky;float:right;top:-12px;right:auto;margin:-12px -7px -25px 0;z-index:4;background:#f9fbf4;border:1px solid #d9e4d2;border-radius:50%}
