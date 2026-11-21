@@ -41,3 +41,7 @@ These repositories are components of one application, not separate deployable bo
 Shared stall data, event logo, favicon and release metadata are deliberately identical in both repositories. Preserve the admin-specific files when merging.
 
 See `PROJECT-NOTES.md`, `README-WEBSITE.md` and `dist/records/` for source annotations, artwork attribution, verification history and unresolved brochure details. Reconstructed logos and artwork remain explicitly identified. Credentials, sessions and live booking data are not included.
+
+## Current expo branding
+
+The original organiser-supplied expo PNG is preserved unchanged in `dist/assets/expo-logo-original.png`. The public header/footer and admin brand use that same file. Public layouts include larger readable text and Brain Factory credits under both Organised by and Powered by, with a smaller partner mark. The Vercel-specific configuration and shared booking backend are retained.

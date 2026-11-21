@@ -1,4 +1,4 @@
-import{validStallStatus}from'./status-policy.js?v=f4cdcbaf668f40cd';
+import{validStallStatus}from'./status-policy.js?v=a1c783d9ed280196';
 export const WHATSAPP_NUMBER='917305749636';
 export const WHATSAPP_ACTION=`https://wa.me/${WHATSAPP_NUMBER}`;
 

@@ -2,7 +2,7 @@
   "source": "15 user-provided inline reference images, visually analysed in order",
   "original_posters_backed_up": false,
   "original_logo_files_backed_up": false,
-  "reason": "Inline images were visible in chat, but no downloadable original files or source image binaries were present in the execution workspace.",
+  "reason": "The original expo logo was supplied through Google Drive on 21 November 2026 and is preserved byte-for-byte. Original binaries for the earlier brochure, partner and venue images remain unavailable.",
   "assets": [
     {
       "file": "assets/agri-future.png",
@@ -31,11 +31,20 @@
       "description": "Texvalley / Price-less Marketplace wordmark; not an exact original.",
       "sha256": "923971c38842ad0d99a9ef89f89789b5dc2d3b3be296535e1380c8cdb74004d6",
       "bytes": 213475
+    },
+    {
+      "file": "assets/expo-logo-original.png",
+      "status": "user_supplied_original_unchanged",
+      "description": "Original expo logo supplied by the user, displayed without cropping, recolouring, regeneration or re-encoding.",
+      "source_url": "https://drive.google.com/file/d/1hE074_BLpDQSOz1qiQYXLoW9z8uwZTUS/view?usp=sharing",
+      "sha256": "4fb05067a00b6ff997d0bf3897d051ca4f358f2576a83dd7e421a43c1b7b6156",
+      "bytes": 1196923,
+      "width": 1956,
+      "height": 804
     }
   ],
   "missing_originals": [
     "15 reference image files",
-    "approved event logo",
     "approved GEN Z Agri Foundation logo",
     "approved Brain Factory Event Management logo",
     "approved Texvalley logo",
@@ -58,5 +67,13 @@
       "status": "hosted_browser_screenshot",
       "sha256": "bc559abdccf97d35ed1ecbdda5b921b285266e51e39ca301019fce7261c98f0b"
     }
-  ]
+  ],
+  "current_brand_credits": {
+    "organised_by": "Brain Factory Event Management",
+    "powered_by": "Brain Factory Event Management",
+    "foundation_logo_displayed": false,
+    "partner_display": "CSS viewport of the existing reference-derived Brain Factory mark; source strip retained for archive history.",
+    "requested_new_expo_logo": "Installed from the user-provided original PNG as assets/expo-logo-original.png, unchanged."
+  },
+  "original_event_logo_backed_up": true
 }

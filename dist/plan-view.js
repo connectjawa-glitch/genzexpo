@@ -1,6 +1,6 @@
-import {stalls,halls,colors} from './data.js?v=f4cdcbaf668f40cd';
-import {circulation,accessPoint} from './circulation.js?v=f4cdcbaf668f40cd';
-import {planFocus} from './selection-view.js?v=f4cdcbaf668f40cd';
+import {stalls,halls,colors} from './data.js?v=a1c783d9ed280196';
+import {circulation,accessPoint} from './circulation.js?v=a1c783d9ed280196';
+import {planFocus} from './selection-view.js?v=a1c783d9ed280196';
 const NS='http://www.w3.org/2000/svg';
 const STATUS_COLORS={available:'#23805b',reserved:'#bd8422',sold_out:'#a83c58'};
 export class PlanView{

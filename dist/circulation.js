@@ -1,4 +1,4 @@
-import {stalls,halls} from './data.js?v=f4cdcbaf668f40cd';
+import {stalls,halls} from './data.js?v=a1c783d9ed280196';
 // Arrows transcribed from the re-supplied plans. These are suggested circulation
 // directions, not a certified egress plan. Coordinates share the schematic layout.
 const lane=(id,label,points)=>({id,label,points});
@@ -13,7 +13,7 @@ export const circulation={
    lane('h1-right-up','rightAisle',[[77,96],[77,16]]),
    lane('h1-lower-right','crossAisle',[[77,76.2],[110,76.2]]),
    lane('h1-bottom-right','lowerAisle',[[53,98],[110,98]]),
-   lane('h1-left-link-west','crossAisle',[[39,76.5],[19,76.5]]),
+   lane('h1-left-link-west','crossAisle',[[29.6,76.5],[19,76.5]]),
    lane('h1-left-link-east','crossAisle',[[20.5,82],[42,82]]),
    lane('h1-left-link-up','crossAisle',[[42,82],[42,76.5]])
   ],
@@ -22,7 +22,7 @@ export const circulation={
   // independent directed segments rather than a path through the wall.
   barriers:[
    {id:'h1-upper-divider',key:'barrier',x:55.2,z:0,w:.6,d:17,height:2.8},
-   {id:'h1-stair-divider',key:'barrier',x:39.7,z:74.4,w:.6,d:6.6,height:2.8}
+   {id:'h1-stair-divider',key:'barrier',x:30.7,z:74.4,w:.6,d:6.6,height:2.8}
   ],
   walls:[[[0,10],[26,10]],[[26,10],[26,0]],[[26,0],[106,0]],[[106,0],[106,58]],[[106,58],[114,58]],[[114,58],[114,110]],[[114,110],[48,110]],[[39,110],[0,110]],[[0,110],[0,10]]],
   portals:[{key:'entry',side:'south',from:39,to:48,x:43.5,z:110}],

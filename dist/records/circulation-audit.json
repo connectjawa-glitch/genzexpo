@@ -7,7 +7,7 @@
   "bodyClearance": 0.4,
   "notes": [
     "Hall 1 top cross-aisle is split on either side of the divider between stalls31 and89, descending to the46/88 island.",
-    "Hall 1 lower eastward link runs below the stair-divider at z82, outside the toilet and staircase blocks.",
+    "Hall 1 stair-divider is centered on the shared seam BETWEEN stalls28 and45 at x31, from z74.4 to81. Westbound arrows stay left of it; the eastward link at z82 and stall45 east aisle remain clear.",
     "Hall 2 LED/stall173 divider ends at z58.5; the separate vertical aisle at x28 remains open.",
     "Each tour chapter shows a directed lane separately; camera transitions between chapters are not continuous walking routes.",
     "Visible arrows fade before lane endpoints; walkers use the same directed geometry and fade at endpoints."
@@ -152,7 +152,7 @@
           "label": "crossAisle",
           "points": [
             [
-              39,
+              29.6,
               76.5
             ],
             [
@@ -203,7 +203,7 @@
         {
           "id": "h1-stair-divider",
           "key": "barrier",
-          "x": 39.7,
+          "x": 30.7,
           "z": 74.4,
           "w": 0.6,
           "d": 6.6,

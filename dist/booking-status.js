@@ -1,4 +1,4 @@
-import{validStallStatus,stallEnquiryDecision}from'./status-policy.js?v=f4cdcbaf668f40cd';
+import{validStallStatus,stallEnquiryDecision}from'./status-policy.js?v=a1c783d9ed280196';
 const STALL_COUNT=193;
 export const BOOKING_POLL_MS=20000;
 

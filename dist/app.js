@@ -1,11 +1,11 @@
-import{stalls,tiers,halls,colors,services,audience,calendar}from'./data.js?v=f4cdcbaf668f40cd';
-import{languages,t,setLang,getLang,money,date}from'./i18n.js?v=f4cdcbaf668f40cd';
-import{icon,fillIcons}from'./icons.js?v=f4cdcbaf668f40cd';
-import{PlanView}from'./plan-view.js?v=f4cdcbaf668f40cd';
-import{calloutPosition}from'./selection-view.js?v=f4cdcbaf668f40cd';
-import{WHATSAPP_ACTION,buildEnquiryDraft,validEnquiryPhone,guardedWhatsAppHandoff}from'./whatsapp.js?v=f4cdcbaf668f40cd';
-import{BookingStatus}from'./booking-status.js?v=f4cdcbaf668f40cd';
-import{StatusNotice}from'./status-notice.js?v=f4cdcbaf668f40cd';
+import{stalls,tiers,halls,colors,services,audience,calendar}from'./data.js?v=a1c783d9ed280196';
+import{languages,t,setLang,getLang,money,date}from'./i18n.js?v=a1c783d9ed280196';
+import{icon,fillIcons}from'./icons.js?v=a1c783d9ed280196';
+import{PlanView}from'./plan-view.js?v=a1c783d9ed280196';
+import{calloutPosition}from'./selection-view.js?v=a1c783d9ed280196';
+import{WHATSAPP_ACTION,buildEnquiryDraft,validEnquiryPhone,guardedWhatsAppHandoff}from'./whatsapp.js?v=a1c783d9ed280196';
+import{BookingStatus}from'./booking-status.js?v=a1c783d9ed280196';
+import{StatusNotice}from'./status-notice.js?v=a1c783d9ed280196';
 const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
 let plan=null,directions=true,tourState=null,rendererName='',pinSize=null;
 let hall=1,selected=null,day=0,view='3d',explorer=null,has3d=false,paused=matchMedia('(prefers-reduced-motion: reduce)').matches,enquiryStall=null,selectionIntent=0,enquiryIntent=0,selectionChecking=false,enquiryOpening=false,enquiryBusy=false;
@@ -86,7 +86,7 @@ const callbacks={onHover:showHover,onPin:p=>{if(view==='3d')placePin(p);},onStop
 plan=new PlanView($('#flat-map'),n=>selectStall(n),showHover,p=>{if(view==='2d')placePin(p);},()=>({t,lang:getLang().code}));
 window.addEventListener('localechange',localize);window.addEventListener('resize',()=>{pinSize=null;plan?.projectPin();});document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!dialog.open&&!statusNotice.open)clearSelection();});fillIcons();localize();if(paused){document.body.classList.add('motion-paused');$('#motion').innerHTML=icon('play');$('#motion').setAttribute('aria-pressed','true');}
 let scenePromise=null;
-async function ensureScene(){if(scenePromise)return scenePromise;scenePromise=(async()=>{let candidate=null;try{const probe=document.createElement('canvas'),gl=probe.getContext('webgl2',{failIfMajorPerformanceCaveat:true});if(!gl)throw new Error('Use compatible renderer');gl.getExtension('WEBGL_lose_context')?.loseContext();const{HallExplorer}=await import('./scene.js?v=f4cdcbaf668f40cd');candidate=new HallExplorer($('#scene'),n=>selectStall(n),()=>({t,lang:getLang().code}),callbacks);candidate.init(hall,paused);rendererName='webgl';}catch{candidate?.destroy?.();$('#scene').replaceChildren();const{HallExplorer}=await import('./canvas-scene.js?v=f4cdcbaf668f40cd');candidate=new HallExplorer($('#scene'),n=>selectStall(n),()=>({t,lang:getLang().code}),callbacks);candidate.init(hall,paused);rendererName='software';}explorer=candidate;has3d=true;$('#scene canvas').dataset.renderer=rendererName;explorer.filter($('#category').value);explorer.setBookings(bookings.booked,bookings.statuses);explorer.setDirections(directions);if(selected)explorer.select(selected.n,view==='3d');explorer.setVisible(view==='3d');setView(view);$('#scene-loader').hidden=true;})().catch(error=>{explorer=null;has3d=false;$('#scene-loader').hidden=true;$('[data-view="3d"]').disabled=true;setView('2d');console.warn('Hall view fallback:',error.message);});return scenePromise;}
+async function ensureScene(){if(scenePromise)return scenePromise;scenePromise=(async()=>{let candidate=null;try{const probe=document.createElement('canvas'),gl=probe.getContext('webgl2',{failIfMajorPerformanceCaveat:true});if(!gl)throw new Error('Use compatible renderer');gl.getExtension('WEBGL_lose_context')?.loseContext();const{HallExplorer}=await import('./scene.js?v=a1c783d9ed280196');candidate=new HallExplorer($('#scene'),n=>selectStall(n),()=>({t,lang:getLang().code}),callbacks);candidate.init(hall,paused);rendererName='webgl';}catch{candidate?.destroy?.();$('#scene').replaceChildren();const{HallExplorer}=await import('./canvas-scene.js?v=a1c783d9ed280196');candidate=new HallExplorer($('#scene'),n=>selectStall(n),()=>({t,lang:getLang().code}),callbacks);candidate.init(hall,paused);rendererName='software';}explorer=candidate;has3d=true;$('#scene canvas').dataset.renderer=rendererName;explorer.filter($('#category').value);explorer.setBookings(bookings.booked,bookings.statuses);explorer.setDirections(directions);if(selected)explorer.select(selected.n,view==='3d');explorer.setVisible(view==='3d');setView(view);$('#scene-loader').hidden=true;})().catch(error=>{explorer=null;has3d=false;$('#scene-loader').hidden=true;$('[data-view="3d"]').disabled=true;setView('2d');console.warn('Hall view fallback:',error.message);});return scenePromise;}
 const sceneObserver=new IntersectionObserver(entries=>{if(entries.some(e=>e.isIntersecting)){sceneObserver.disconnect();ensureScene();}},{rootMargin:'500px'});sceneObserver.observe($('#scene-wrap'));
 // DOM controls and both renderers share one selected-stall state.
 window.expo={get state(){return{hall,selected:selected?.n,view,language:getLang().code,has3d,paused,directions,renderer:rendererName};},get stallCount(){return stalls.length;}};

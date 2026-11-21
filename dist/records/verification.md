@@ -103,3 +103,17 @@
 - Public selection and enquiry opening require a fresh status check. Sold-out clicks display a translated notice without selecting the stall. Reserved clicks display a warning; the reviewed WhatsApp draft includes the status and warning in each of the six languages. Tests cover all193 stall drafts, Unicode encoding, latest-intent selection, a sold-out update during an open enquiry, stale/offline failure, cancelled/closed blank tabs and blocked-popup fallback. No messages or live inventory updates were used for testing.
 - Status markers repaint without changing source category colours or resetting the camera. Available stalls do not add map badges. The existing no-duplicate-floor, label-depth, bounded focus and pointer-drag regressions still pass. Both committed migrations are included in the deployment artifact and remain inaccessible as public static files.
 - The managed preview command could not start this Worker checkout because it has no dev script or static.directory. Programmatic checks precede publication; live browser review of the deployed pages is separate. Fixture checks do not substitute for a physical-device test or live credential entry.
+
+## Branding and readability — 21 November 2026
+- Brain Factory is the sole displayed partner mark under both Organised by and Powered by; the Foundation mark is outside the clipped image window.
+- Public body copy increased to 16px, regular labels and controls to 14px, secondary metadata to 12px. Map-unit labels preserve their existing geometry.
+- Enlarged header/footer brand presentation, responsive menu breakpoint and multiline mobile controls.
+- Exact new logo swap is pending a downloadable original file; the generated conversion changed the emblem and is excluded from the site.
+- Local preview cannot start for the current custom Worker without a configured dev script; no preview infrastructure changes were made.
+
+## Original expo logo installed — 21 November 2026
+- The previously pending original logo has been supplied by the user through Google Drive.
+- The PNG in `assets/expo-logo-original.png` matches the downloaded original byte-for-byte: 1,196,923 bytes; 1956 × 804 pixels; SHA-256 `4fb05067a00b6ff997d0bf3897d051ca4f358f2576a83dd7e421a43c1b7b6156`.
+- Header, footer and admin brand use that original image with its native aspect ratio; no image editing or conversion was performed.
+- The Worker reuses original image byte ranges from the source ZIP to fit the deployment size limit. PNG and JPEG response contents, HEAD length and ETag handling pass verification.
+- The complete project check suite passes, including booking, WhatsApp, hall geometry, coherent release assets and component ZIP integrity.

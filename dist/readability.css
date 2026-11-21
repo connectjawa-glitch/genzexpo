@@ -1,0 +1,149 @@
+/* Readable type across the public expo site. Load after the component styles.
+   Map labels remain in schematic SVG units so the floor plans keep their scale. */
+body{font-size:1rem;line-height:1.7}
+.hero .hero-description,.story .secondary,.organiser-intro .lead,.organiser-intro .secondary,
+.section-heading>p,.programme-panel p,.night-copy>p:not(.eyebrow),
+.venue-section .venue-grid>div:first-child>p:not(.eyebrow),.services p,
+.contact-section p:not(.eyebrow),.practical p,.notes-content{font-size:1rem;line-height:1.8}
+.story .lead{font-size:1.125rem;line-height:1.8}
+.hero .hero-description{max-width:520px}
+.header nav,.header nav.open a,.header .button-small,.language-control select,
+.button,.text-link,.audience-row,.regional h3,.strengths>span,.service-list span,
+.tariff-label,.tariff-spec,.tariff-card summary,.tariff-card .text-link,
+.programme-tabs button,.programme-tabs b,.programme-section #calendar,
+.free-pass,.venue-section .button,.practical h3,.source-notes summary,
+.notes-links .text-link,.footer .text-link{font-size:.875rem;line-height:1.6}
+.header .button-small{min-height:44px}
+.header nav{gap:clamp(14px,1.5vw,24px)}
+.language-control select{max-width:145px;min-height:44px;padding-right:24px}
+.announcement,.hero .eyebrow,.hero-meta,.stats>div>span,.eyebrow,
+.regional p,.panel-footer>span:nth-child(2),.tariff-hall-heading>span,
+.tariff-subtitle,.tariff-number-list,.fine-print,.programme-note,
+.night-copy .eyebrow,.venue-area span,.location-marker small,
+.road>span,.road-label,.partner-labels,.contact-section .eyebrow,
+.footer p,.image-caption{font-size:.75rem;line-height:1.7}
+.programme-note{font-size:.75rem!important}
+.eyebrow,.hero .eyebrow,.partner-labels,.footer p{letter-spacing:.08em}
+.image-caption{max-width:calc(100% - 32px);padding:5px 9px;text-align:right}
+.location-marker b{font-size:.875rem}
+.header .brand img{width:clamp(200px,19vw,260px);height:auto}
+.footer .brand img{width:240px;height:auto}
+.footer .brand{flex-shrink:0}.footer{flex-wrap:wrap}
+.footer p{color:#657657;max-width:480px}
+.tariff-number-list{overflow-wrap:anywhere}
+.programme-tabs button{gap:12px;padding-inline:14px}
+.programme-tabs b{letter-spacing:.02em}
+.service-list span{padding:9px 13px}
+
+/* Controls, selected-stall facts and stock status carry the working information. */
+html .hall-topbar .hall-tabs button,html .map-top-actions .view-tabs button,
+html .hall-topbar .directions-toggle,.segmented button,
+.explorer-search .search-wrap input,.explorer-search select#category,
+.stall-directory button,.detail-quick button,.detail-quick small,
+.stall-detail .detail-description,.stall-detail .detail-intro,
+.detail-top .detail-intro,.detail-identify small,.detail-price small,
+.detail-specs span,.detail-specs strong,.detail-identify .tier-chip,
+.detail-focus,.stall-detail .enquire-stall,.detail-nav button,
+.booking-legend,.booking-badge,.booking-status-line,.booking-status-copy,
+.scene-badge,.map-hover strong,.tour-status strong,.selection-pin strong{font-size:.875rem;line-height:1.6}
+html .scene-wrap .scene-tools .map-tool{font-size:.875rem;line-height:1.5;min-height:44px;padding:9px 11px;white-space:normal}
+.scene-tools{max-width:calc(100% - 36px)}
+.scene-tools .map-tool{flex:1;min-width:0}
+.scene-badge{max-width:calc(100% - 36px);padding:8px 12px}
+.scene-orientation{font-size:.75rem;line-height:1.6}
+.stall-detail .detail-fine{font-size:.75rem!important;color:#637452}
+.source-issue,.detail-nav>span,.detail-brand,.map-hover small,
+.selection-pin small,.selection-pin .pin-booked,.tour-status small,
+html .hall-workspace .map-legend,html .hall-workspace .map-legend>span,
+html .hall-workspace .map-legend b,.map-footnote,.circulation-note,
+.facilities-line strong,.facilities-line p,.directory-heading>span,
+.booking-status-time,.booking-status-note,.detail-booking-line small,
+.scene-wrap .scene-hint{font-size:.75rem;line-height:1.7}
+.scene-wrap .scene-hint{bottom:9px;padding-inline:16px;color:#536c45}
+.scene-tools{bottom:50px}
+.map-legend b{padding:1px 5px}.map-legend{gap:14px 20px}
+.map-footnote a{white-space:normal;flex-shrink:0}
+.facilities-line p,.map-footnote,.booking-status-note,.booking-status-time,
+.detail-specs span,.detail-intro{color:#637452}
+.stall-directory button{min-height:46px}
+.detail-quick{flex-wrap:wrap}.detail-nav{flex-wrap:wrap}
+.detail-nav button{min-height:44px}.detail-nav svg{flex-shrink:0}
+.scene-wrap[data-booking-checking=true]:after,.status-notice-stall{font-size:.75rem;line-height:1.7}
+#stall-status-message{font-size:1rem;line-height:1.8}
+
+/* Enquiry content remains easy to review before opening WhatsApp. */
+#enquiry-dialog #enquiry-intro,#enquiry-dialog .enquiry-selection,
+#enquiry-selection:not(:empty),#enquiry-dialog .enquiry-fine{font-size:.875rem;line-height:1.8}
+.enquiry-fields label,.enquiry-draft-label,.enquiry-recipient,
+.enquiry-recipient strong,#enquiry-dialog .dialog-phones .text-link,
+.whatsapp-send,.whatsapp-contact{font-size:.875rem;line-height:1.7}
+#enquiry-dialog input,#enquiry-dialog textarea,#enquiry-dialog #enquiry-draft{font-size:1rem;line-height:1.75}
+#enquiry-dialog #enquiry-draft{min-height:230px}
+.enquiry-hint,.enquiry-status-check{font-size:.75rem;line-height:1.8}
+.enquiry-recipient strong{white-space:normal}
+
+/* The original language-specific rules shrank body copy and controls. */
+html:not([lang=en]) .hero .hero-description{font-size:1rem}
+html:not([lang=en]) .hero .eyebrow{font-size:.75rem}
+html:not([lang=en]) .hero-buttons .button,html:not([lang=en]) .hero-buttons .text-link,
+html:not([lang=en]) .hall-topbar .segmented button,
+html:not([lang=en]) .scene-wrap .scene-tools .map-tool,
+html:not([lang=en]) .hall-topbar .directions-toggle,
+html:not([lang=en]) .detail-identify .tier-chip,
+html:not([lang=en]) .detail-specs strong,html:not([lang=en]) .detail-specs span{font-size:.875rem}
+
+@media(max-width:1200px){
+ .header nav{display:none;position:absolute;inset:100% 0 auto;background:#fff;padding:22px 28px;border-bottom:1px solid #d8e3cc;gap:14px 24px;justify-content:flex-start}
+ .header nav.open{display:flex}.header .mobile-menu{display:grid;min-width:44px;min-height:44px}
+ .header-actions{margin-left:auto}.header .brand img{width:220px}
+}
+@media(max-width:800px){
+ .header .brand img{width:200px}.header-actions>.button{display:none}
+ .footer .brand img{width:220px}
+ .explorer-search select#category{max-width:none}
+ .scene-wrap .scene-tools{left:12px;right:12px;max-width:none;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:4px}
+ html .scene-wrap .scene-tools .map-tool{display:flex;flex-direction:column;gap:4px;min-height:68px;padding:7px 5px;text-align:center;overflow-wrap:anywhere}
+ .scene-wrap #flat-map{padding-bottom:135px}
+ .scene-wrap .scene-tools{bottom:74px}
+ .scene-wrap #flat-map{padding-bottom:155px}
+ .scene-wrap .scene-corner{top:90px}
+ .tour-status{top:90px;max-width:calc(100% - 115px);min-width:0}
+ .tour-status strong{font-size:.75rem}.tour-status small{font-size:.75rem}
+ .stall-detail.has-selection{grid-template-columns:minmax(0,1fr) minmax(110px,.85fr)}
+ .detail-identify .tier-chip{max-width:100%;font-size:.875rem}
+ .detail-specs{gap:12px}.detail-specs strong,.detail-specs span{font-size:.875rem}
+ .map-hover{max-width:230px}.selection-pin{max-width:min(230px,calc(100% - 30px))}
+ .booking-status-note{flex-basis:100%}
+ .programme-tabs{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .programme-tabs button{font-size:.875rem}.programme-tabs b{font-size:.875rem}
+ .strengths{flex-wrap:wrap;gap:18px 24px}.strengths>span{font-size:.875rem;max-width:none;flex:1 1 140px}
+ .contact-section .whatsapp-contact{font-size:.875rem}
+}
+@media(max-width:600px){
+ .header .brand img{width:clamp(142px,43vw,185px);max-width:100%}
+ .header .brand{min-width:0;flex:0 1 auto}.header{gap:8px}
+ .language-control select{font-size:1rem;width:auto;max-width:100px;min-width:0;padding-inline:3px 18px}
+ .header-actions{gap:4px}.language-control>span[aria-hidden=true]{display:none}
+ .header nav.open a{font-size:.875rem;min-height:44px}
+ .announcement{flex-wrap:wrap;gap:2px 12px;padding:8px 16px;font-size:.75rem}
+ .announcement .divider{display:none}.announcement a{display:none}
+ .hero-meta{font-size:.875rem}.hero .hero-description{font-size:1rem}
+ .hero-buttons{flex-wrap:wrap;gap:18px}.hero-buttons .button,.hero-buttons .text-link{font-size:.875rem}
+ .stats>div>span{font-size:.75rem}.stats>div{min-width:0}
+ .panel-footer>span:nth-child(2){font-size:.75rem}
+ .explorer-search .search-wrap input,.explorer-search select#category{font-size:1rem}
+ html .map-top-actions .view-tabs button,html .hall-topbar .directions-toggle{font-size:.875rem}
+ .hall-topbar .directions-toggle{max-width:none;flex:1}.hall-topbar .directions-toggle span:last-child{max-width:none}
+ .map-top-actions{flex-wrap:wrap}.map-top-actions .view-tabs{width:100%}
+ .scene-badge{font-size:.75rem;max-width:calc(100% - 24px)}
+ html .hall-workspace .map-legend,html .hall-workspace .map-legend>span,html .hall-workspace .map-legend b{font-size:.75rem}
+ .detail-nav{gap:8px}.detail-nav>span{order:3;flex-basis:100%;text-align:center}
+ .partners{padding-inline:20px}.partner-labels{font-size:.75rem;gap:16px}
+ .footer{gap:20px}.footer .brand img{width:220px;max-width:65vw}
+ .footer p{font-size:.75rem;flex-basis:100%;order:3}
+ .notes-content{padding-inline:0;font-size:1rem}
+ .enquiry-send{align-items:stretch;flex-direction:column}
+ .enquiry-recipient{flex-wrap:wrap;font-size:.875rem;gap:4px 12px}
+ .enquiry-recipient strong,.whatsapp-send{font-size:.875rem}
+ #enquiry-dialog #enquiry-draft{font-size:1rem}
+}
